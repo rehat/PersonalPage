@@ -1,58 +1,215 @@
-#content{
-	
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-#nav{
-	position:absolute;
-	right:10px;
-	top:0px;
-}
 
-#header{
-	background-color:black;
-	color: white;
-    margin: 0px 0px 5px 0px;;
-}
-#main{
-	background-color:#cccccc;
-    height:200px;
-	border-width:1px;
-	border-style: dotted;
-}
+/* -----------------------
+	My Styles
+-------------------------*/
 
-#footer{
-	text-align:center;
-	padding-top: 10px;  
-}
-
-#footer img{vertical-align: top;}
 
 body{
-	background-color:white;
-	line-height:1;
-	font-family:Arial
+	text-decoration: none;
+
 }
 
-h1{
-	font-size:40px;
-	margin: 0px 5px 0px 5px;
-	font-weight: bold; 
-	font-family: Helvetica;
-	padding-bottom: 0px;
-	padding-top: 5px;
-	
-}
-p{
-	font-size:14px;
-	margin: 0px 5px 0px 5px;
-	color:#cccccc;
+a{
+	text-decoration: none;
 }
 
-#about{
-	position:absolute;
-	font-size:16px;
-	margin: 0px 5px 0px 5px;
+/* ---- Side Nav ----- */
+nav {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+#avatar a{
+	background-image: url(http://www.gravatar.com/avatar/a45316065c0e63525a132b33f48ea91e.png);
+	display:block;
+	height: 80px;
+	width: 80px;
+	text-indent: -9999px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+section.name{
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+}
+
+#ali{
+	color:#848484;
+}
+
+#taher{
+	color:#1C1C1C;
+}
+
+section.links li{
+	margin-bottom: 15px;
+}
+
+section.links a{
+	background-color: black;
+	border: 2px;
+	border-style: solid;
+	border-color: white;
+	color: white;
+	padding: 5px 3px;
+}
+
+section.links a:hover{
+	background-color: white;
 	color: black;
-	width:500px;
-	left:200px;
+	border-color: black;
+	transition: color 2s;
+	-moz-transition: color 2s;
+	-webkit-transition: color 2s;
 }
+
+/* ---- Main ----- */
+
+#content{
+	width: 765px;
+	margin-left:115px;
+}
+
+#content h1{
+	font-size: 36px;
+	font-family: 'Overlock SC', cursive;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-left: 10px;
+	border-bottom: 2px solid rgb(210,210,210);
+}
+
+div.about-main{
+	float:left;
+	width: 550px;
+	margin-bottom: 25px;
+}
+
+.about-main li{
+	display: inline;
+}
+
+div.social-networks{
+	margin-top: 25px;
+}
+
+div.social-networks li{
+	margin: 15px 15px;
+	padding-left: 35px;
+}
+
+
+div.badges{
+	margin-top: 25px;
+}
+
+div.badges li{
+	margin: 25px 25px;
+}
+
+/* ---- Side Bar ----- */
+
+div.about-rside{
+	float: left;
+	margin-left: 13px;
+	width: 200px;
+}
+
+
+div.currently{
+	padding-left: 10px;
+	border-left:2px solid rgb(210,210,210);
+}
+
+div.doing{
+	margin-bottom: 15px;
+	//border-bottom: 2px solid rgb(210,210,210);
+}
+
+div.doing img{
+	//float: left;
+	margin: 5px 5px; 
+}
+
+div.doing p{
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+div.doing h3{
+	border-bottom: 2px solid rgb(210,210,210);
+	font-size: 18px;
+	margin: 5px 5px;
+}
+
+
+/* ------- Footer ----- */
+
+footer{
+	clear: both;
+	border-top: 2px solid rgb(210,210,210);
+
+}
+
+
+
+
