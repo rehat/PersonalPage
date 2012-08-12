@@ -52,9 +52,25 @@ table {
 body{
 	text-decoration: none;
 	font-family: Helvetica,sans-serif;
+	//font-family:Arial, Arial, Helvetica, sans-serif;
+
 }
 a{
 	text-decoration: none;
+	color: #85878C;
+	font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Krona One', sans-serif;
+}
+
+a:hover{
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	font-weight: bold;
 }
 /* ---- Side Nav ----- */
 nav {
@@ -125,7 +141,7 @@ nav {
 }
 #content h1{
 	font-size: 36px;
-	font-family: 'Overlock SC', cursive;
+	//font-family: 'Krona One', sans-serif;
 	margin-bottom: 10px;
 	margin-top: 10px;
 	padding-left: 10px;
@@ -144,7 +160,7 @@ nav {
 }
 .about-main h3{
 	font-size: 24px;
-	font-family: 'Overlock SC', cursive;
+	//font-family: 'Krona One', sans-serif;
 	margin-bottom: 25px;
 	margin-top: 25px;
 	padding-left: 10px;
@@ -178,7 +194,7 @@ nav {
 }
 .about-rside h4{
 	font-size: 24px;
-	font-family: 'Overlock SC', cursive;
+	//font-family: 'Krona One', sans-serif;
 	margin-bottom: 10px;
 	margin-top: 22px;
 	padding-left: 10px;
@@ -201,12 +217,14 @@ nav {
 }
 .doing h3{
 	border-bottom: 2px solid rgb(210,210,210);
+	//font-family: 'Krona One', sans-serif;
 	font-size: 16px;
 	margin: 5px 5px;
 }
 /* ------- Projects Articles ---- */
 section h2{
 	font-size: 18px;
+	//font-family: 'Krona One', sans-serif;
 	padding-left: 10px;
 	border-bottom: 2px solid rgb(210,210,210);
 }
@@ -220,7 +238,7 @@ section h2{
 	margin-left: 10px;
 }
 .about-project img{
-	float: left;
+	//float: left;
 	padding-right: 10px;
 	padding-bottom: 10px;
 }
@@ -237,6 +255,16 @@ header{
 	margin-bottom: 10px;
 	padding-left: 10px;
 }
+.checklist > li{
+	list-style: square;
+}
+.checklist {
+	margin-left: 25px;
+}
+article{
+	padding-bottom: 20px;
+}
+
 /* ------- Skills ----- */
 h4{
 	font-size: 18px;
@@ -251,12 +279,19 @@ h5{
 	margin-top: 5px;
 }
 
-#skills{
+.skills{
 	margin-left: 50px;
-	margin-right: 300px;
+	margin-right: 100px;
+	display: inline-block;
 }
+.skill-def{
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+}
+
 .skill-level{
-	padding-left: 50px;
+	padding-left: 10px;
 }
 .column1{
 	display: inline-block;
